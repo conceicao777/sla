@@ -1,130 +1,542 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AVYRA Perfumes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
+<!DOCTYPE html >
+< html lang = "pt-BR" > 
+  < cabeçalho >
+    < meta charset = "UTF-8" /> 
+    < meta name = "viewport" content = "width=device-width, initial-scale=1.0" />  
+    <title> AVYRA Perfumes </title>​​​
+    < link rel = "preconnect" href = "https://fonts.googleapis.com" />  
+    < link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />   
+    < link
+      href = "https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700;800&display=swap"
+      rel = "folha de estilo"
     />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">AVYRA</div>
-      <nav class="menu" aria-label="Navegação principal">
-        <button class="ghost-btn">Entrar</button>
-        <button class="ghost-btn">Cadastrar</button>
-        <button class="icon-btn" id="favoritesBtn" aria-label="Favoritos">❤</button>
-        <button class="icon-btn" id="cartBtn" aria-label="Sacola">👜 <span id="cartCount">0</span></button>
-      </nav>
-    </header>
+    < link rel = "stylesheet" href = "styles.css" />  
+  </head>​​
+  < corpo >
+    < header class = "topbar" > 
+      < div class = " brand " > AVYRA </div> 
+      <navclass="menu"aria-label="Navegação principal">  
+        < button class = " ghost -btn" id = " loginBtn" > Entrar </button>  
+        < button class = " ghost -btn" id = " registerBtn" > Cadastrar </button>  
+        < button class = " icon -btn" id = "favoritesBtn" aria-label = " Favoritos" > ❤ < span id = "favoritesCount" > 0 </span>     </ botão >
+        < button class = "icon-btn" id = "favoritesBtn" aria-label = "Favoritos" > ❤   </ botão >
+        < button class = " icon -btn" id = "cartBtn" aria-label = " Sacola" > 👜 < span id = " cartCount " > 0 </span> </button>    
+      </ nenhum >
+    </ cabeçalho >
 
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">AVYRA — NÃO É APENAS FRAGRÂNCIA, É LEGADO.</p>
+    < principal >
+      < section class = "hero" > 
+        < div class = "hero-text hero-text-only" > 
           <h1>Em Breve</h1>
-          <p class="launch-date">Lançamento oficial em 19 de fevereiro de 2026</p>
-          <div class="hero-actions">
-            <button class="primary-btn">Quero ser avisado(a)</button>
-            <button class="secondary-btn">Ver produtos</button>
-          </div>
-        </div>
-        <img class="hero-product" src="assets/perfumes/hero.svg" alt="Frasco do perfume AVYRA em destaque" />
-      </section>
+          <pclass="hero-highlight">A AVYRA FARÁ UM EVENTO INESQUECÍVEL!</p> 
+        </div>​​
+      </ seção >
 
-      <section class="showcase" id="produtos">
+      <sectionclass="showcase"id="produtos">  
         <h2>Perfumes em destaque</h2>
 
-        <article class="product-card" data-name="FOGO" data-price="59.99">
-          <div>
+        < article class = "product-card" data-name = "FOGO" data-price = "59.99" >   
+          <div>​​
             <h3>FOGO (Perfume Dourado)</h3>
-            <p class="price">A partir de R$ 59,99</p>
+            <pclass="price">A partir de R$ 59,99</p> 
             <p>Fragrância marcante com notas quentes e intensidade.</p>
-            <div class="actions">
-              <button class="buy-btn">Comprar agora</button>
-              <button class="bag-btn">Adicionar à sacola</button>
-            </div>
-          </div>
-          <img class="product-image" src="assets/perfumes/fogo.svg" alt="Perfume FOGO da AVYRA" />
-        </article>
+            < div class = "actions" > 
+              < button class = " buy - btn" > Comprar agora </button> 
+              <buttonclass="bag-btn">Adicionar à sacola</button> 
+              < button class = " fav -btn" aria -label = "Favoritar FOGO" > ❤ Favoritar </button>  
+            </div>​​
+          </div>​​
+          <imgclass="product-image"src="assets/perfumes/fogo.png"alt="Perfume FOGO da AVYRA" />   
+        </ artigo >
 
-        <article class="product-card" data-name="AURA" data-price="59.99">
-          <div>
-            <h3>AURA (Perfume Rosé)</h3>
-            <p class="price">A partir de R$ 59,99</p>
+        < article class = "product-card" data-name = "AURA" data-price = "59.99" >   
+          <div>​​
+            <h3> AURA ( Perfume Rosé ) </h3>
+            <pclass="price">A partir de R$ 59,99</p> 
             <p>Delicado, feminino e com presença suave.</p>
-            <div class="actions">
-              <button class="buy-btn">Comprar agora</button>
-              <button class="bag-btn">Adicionar à sacola</button>
-            </div>
-          </div>
-          <img class="product-image" src="assets/perfumes/aura.svg" alt="Perfume AURA da AVYRA" />
-        </article>
+            < div class = "actions" > 
+              < button class = " buy - btn" > Comprar agora </button> 
+              <buttonclass="bag-btn">Adicionar à sacola</button> 
+              < button class = " fav -btn" aria -label = "Favoritar AURA" > ❤ Favoritar </button>  
+            </div>​​
+          </div>​​
+          < img class = "product-image" src = "assets/perfumes/aura.png" alt = "Perfume AURA da AVYRA" />   
+        </ artigo >
 
-        <article class="product-card" data-name="MARÉ" data-price="51.99">
-          <div>
+        < article class = "product-card" data-name = "MARÉ" data-price = "51.99" >   
+          <div>​​
             <h3>MARÉ (Azul Tempestade)</h3>
-            <p class="price">A partir de R$ 51,99</p>
+            <pclass="price">A partir de R$ 51,99</p> 
             <p>Movimento, liberdade e frescor intenso.</p>
-            <div class="actions">
-              <button class="buy-btn">Comprar agora</button>
-              <button class="bag-btn">Adicionar à sacola</button>
-            </div>
-          </div>
-          <img class="product-image" src="assets/perfumes/mare.svg" alt="Perfume MARÉ da AVYRA" />
-        </article>
+            < div class = "actions" > 
+              < button class = " buy - btn" > Comprar agora </button> 
+              <buttonclass="bag-btn">Adicionar à sacola</button> 
+              < button class = " fav -btn" aria -label = "Favoritar MARÉ" > ❤ Favoritar </button>  
+            </div>​​
+          </div>​​
+          < img class = "product-image" src = "assets/perfumes/mare.png" alt = "Perfume MARÉ da AVYRA" />   
+        </ artigo >
 
-        <article class="product-card" data-name="NOITE" data-price="79.99">
-          <div>
+        < article class = "product-card" data-name = "NOITE" data-price = "79.99" >   
+          <div>​​
             <h3>NOITE (Azul Noturno)</h3>
-            <p class="price">A partir de R$ 79,99</p>
+            <pclass="price">A partir de R$ 79,99</p> 
             <p>Elegância, profundidade e mistério.</p>
-            <div class="actions">
-              <button class="buy-btn">Comprar agora</button>
-              <button class="bag-btn">Adicionar à sacola</button>
-            </div>
-          </div>
-          <img class="product-image" src="assets/perfumes/noite.svg" alt="Perfume NOITE da AVYRA" />
-        </article>
-      </section>
+            < div class = "actions" > 
+              < button class = " buy - btn" > Comprar agora </button> 
+              <buttonclass="bag-btn">Adicionar à sacola</button> 
+              < button class = " fav -btn" aria -label = "Favoritar NOITE" > ❤ Favoritar </button>  
+            </div>​​
+          </div>​​
+          <imgclass="product-image"src="assets/perfumes/noite.png"alt="Perfume NOITE da AVYRA" />   
+        </ artigo >
+      </ seção >
 
-      <section class="newsletter">
+      < section class = "newsletter" id = "newsletter" >  
         <h2>Receba promoções e novidades</h2>
-        <form class="subscribe-form">
-          <label>
+        < form class = "subscribe-form" > 
+          < rótulo >
             E-mail
-            <input type="email" placeholder="seuemail@exemplo.com" required />
-          </label>
-          <button type="submit" class="primary-btn">Cadastrar</button>
-        </form>
-      </section>
-    </main>
+            < input type = "email" placeholder = "seuemail@exemplo.com" required />   
+          </label>​​
+          < button type = "submit" class = " primary - btn" > Cadastro </button>  
+        </ formulário >
+      </ seção >
+    </main>​​
 
-    <footer>
-      <div>
+    < rodapé >
+      <div>​​
         <h3>Fale conosco</h3>
         <p>Rua Alegre, 123, Belo Horizonte - MG, Brasil</p>
         <p>Telefone: (31) 3456-7890</p>
-      </div>
-      <div>
+      </div>​​
+      <div>​​
         <h3>Atendimento</h3>
-        <button class="link-btn">Ouvidoria</button>
-        <button class="link-btn">Ajuda</button>
-        <button class="link-btn">Trocas e devoluções</button>
-      </div>
-      <div>
+        < button class = " link -btn" > ssndoria </button> 
+        < button class = " link - btn" > Ajuda </button> 
+        <buttonclass="link-btn">Trocas e devoluções</button> 
+      </div>​​
+      <div>​​
         <h3>Redes sociais</h3>
-        <button class="link-btn">Instagram</button>
-        <button class="link-btn">TikTok</button>
-        <button class="link-btn">WhatsApp</button>
-      </div>
-    </footer>
+        < button class = " link - btn" > Instagram </button> 
+        < button class = " link - btn" > TikTok </button> 
+        < button class = " link - btn" > WhatsApp </button> 
+      </div>​​
+    </ rodapé >
 
-    <script src="script.js"></script>
-  </body>
-</html>
+    <asideclass="drawer"id="cartDrawer"aria-label="Sacola de compras">   
+      < div class = "drawer-header" > 
+        <h3>Sacola</h3>
+        < button class = "ghost - btn" id = " closeCartBtn" > Fechar </button>  
+      </div>​​
+      < ul id = " cartItems " class = "drawer-list" > </ul>  
+      < p class = " drawer -total" id = "cartTotal" > Total: R$ 0,00 </p>  
+      < button class = " primary -btn" id = " checkoutBtn" > Finalizar compra </button>  
+    </aside>​​
+
+    < aside class = "drawer" id = "favoritesDrawer" aria-label = "Favoritos" >   
+      < div class = "drawer-header" > 
+        <h3> Favoritos </h3>
+        < button class = "ghost - btn" id = " closeFavoritesBtn" > Fechar </button>  
+      </div>​​
+      < ul id = " favoriteItems " class = "drawer-list" > </ul>  
+    </aside>​​
+    
+
+    < section class = "modal" id = "authModal" aria-hidden = "true" >   
+      < div class = "modal-content" > 
+        < h3 id = " authTitle " > Entrar </h3> 
+        < form id = "authForm" > 
+          < rótulo >
+            E-mail
+            < input type = "email" required />  
+          </label>​​
+          < rótulo >
+            Senha
+            < input type = "password" required minlength = "4" />   
+          </label>​​
+          < button type = "submit" class = " primary -btn" id = "authSubmit" > Continuar </button>   
+          < button type = "button" class = " ghost -btn" id = "closeAuthBtn" > Cancelar </button>   
+        </ formulário >
+      </div>​​
+    </ seção >
+
+    < div class = "toast" id = "toast" role = " status " aria-live = "polite" > </div>    
+
+    < script src = " script.js " > </script> 
+  </body>​​
+</ html >
+script.js
+script.js
++2
+-52
+
+const cartCount = document.querySelector ( '#cartCount' ) ;
+const favoritesCount = document.querySelector ( '#favoritesCount' ) ;
+const bagButtons = document.querySelectorAll ( ' . bag-btn' ) ;
+const buyButtons = document.querySelectorAll ( ' . buy - btn' );
+const favButtons = document.querySelectorAll ( ' . fav - btn' );
+const subscribeForm = document.querySelector ( ' . subscribe-form' );
+
+const cartBtn = document.querySelector ( '#cartBtn ' ) ;
+const favoritesBtn = document.querySelector ( '#favoritesBtn ' ) ;
+const cartDrawer = document.querySelector ( '#cartDrawer ' ) ;
+const favoritesDrawer = document.querySelector ( '#favoritesDrawer ' ) ;
+const closeCartBtn = document.querySelector ( '#closeCartBtn ' ) ;
+const closeFavoritesBtn = document.querySelector ( ' #closeFavoritesBtn' ) ;
+
+const cartItemsList = document.querySelector ( ' # cartItems' );
+const favoriteItemsList = documento . querySelector ( '#favoriteItems' );
+const cartTotal = document.querySelector ( ' # cartTotal' );
+const checkoutBtn = document.querySelector ( '#checkoutBtn ' ) ;
+
+const loginBtn = document.querySelector ( '#loginBtn ' ) ;
+const registerBtn = document.querySelector ( '#registerBtn ' ) ;
+const authModal = document.querySelector ( '#authModal' ) ;
+const authTitle = document.querySelector ( '#authTitle' ) ;
+const authSubmit = document.querySelector ( '#authSubmit' ) ;
+const authForm = document.querySelector ( '#authForm' ) ;
+const closeAuthBtn = document.querySelector ( '#closeAuthBtn' ) ;
+
+const toast = document.querySelector ( ' #toast' )
+ ;
+
+const estado = {
+  carrinho : JSON.parse ( localStorage.getItem ( 'avyra_cart' ) || ' [] ' ) ,
+  favoritos : JSON.parse ( localStorage.getItem ( 'avyra_favorites' ) || ' [ ] ' )
+  carrinho : JSON.parse ( localStorage.getItem ( 'avyra_cart' ) || ' [ ] ' )
+};
+
+const money = ( value ) => `R$ ${value.toFixed( 2 ).replace( '.' , ',' )} ` ;
+ 
+
+função notificar ( mensagem ) {
+ 
+  toast.textConteúdo = mensagem;
+  toast.classList.add ( ' show ' )
+ ;
+  setTimeout ( () => toast. classList . remove ( 'show' ), 1800 );
+}
+
+função persistir ( ) {
+ 
+  localStorage.setItem ( ' avyra_cart ' , JSON.stringify ( state.cart ) ) ;
+  localStorage.setItem ( ' avyra_favorites ' , JSON.stringify ( state.favorites ) ) ;
+}
+
+função renderCarrinho ( ) {
+ 
+  cartCount.textConteúdo = estado.carrinho.comprimento ;​​​
+  cartItemsList.innerHTML = ' ' ;
+
+  se ( !
+ estado.carrinho.comprimento ) {
+    cartItemsList.innerHTML = '<li>Sua sacola está vazia.</li>';
+    carrinhoTotal. textContent = 'Total: R$ 0,00' ;
+    retornar ;
+  }
+
+  seja total = 0 ;
+  estado. carrinho.forEach ( ( item , índice ) = > {
+    total += preço do item ;
+    const li = document.createElement ( 'li ' ) ;
+    li.innerHTML = `
+      <span> ${item.name} — ${money(item.price)} </span>
+      <button class="ghost-btn remove-btn" data-remove-index=" ${index} ">Remover</button>
+    ` ;
+    cartItemsList.appendChild (li)
+ ;
+  });
+
+  carrinhoTotal. textContent = `Total: ${dinheiro(total)} ` ;
+}
+
+função renderFavoritos ( ) {
+ 
+  favoritesCount.textContent = state.favorites.length ;​​​
+  favoriteItemsList.innerHTML = ' ' ;
+
+  se ( !
+ estado.favoritos.comprimento ) {
+    favoriteItemsList.innerHTML = '<li>Nenhum perfume favoritado ainda.</li>';
+  } outro {
+    estado. favoritos.forEach ( ( nome ) = > {
+      const li = document.createElement ( 'li ' ) ;
+      li.innerHTML = `<span> ${name} </span> `
+ ;
+      favoriteItemsList.appendChild ( li);
+    });
+  }
+
+  favButtons.forEach ( ( button ) = > {
+    const card = button.closest ( ' . product-card' );
+    const nome = cartão?. conjunto de dados . nome ;
+    botão.classList.toggle ( 'ativo '
+ , state.favorites.includes ( name ) ) ;
+  });
+}
+
+função adicionarAoCarrinho ( nome, preço ) {
+ 
+  estado. carrinho . empurrar ({ nome, preço : Número (preço) });
+  persistir ();
+  renderCarrinho ();
+  notify(`${name} adicionado à sacola!`);
+}
+
+bagButtons.forEach ( ( button ) = > {
+  botão.addEventListener ( 'click' , ( event ) = > {
+    const card = event.target.closest ( ' . product-card' )
+ ;
+    adicionarAoCarrinho (cartão?. conjuntoDeDados . nome ?? 'Produto' , cartão?. conjuntoDeDados . preço ?? 0 );
+  });
+});
+
+buyButtons.forEach ( ( button ) = > {
+  botão.addEventListener ( 'click' , ( event ) = > {
+    const card = event.target.closest ( ' . product-card' )
+ ;
+    const name = card?. dataset . name ?? 'Produto' ;
+    const preço = cartão?. conjunto de dados . preço ?? 0 ;
+    adicionarAoCarrinho (nome, preço);
+    cartDrawer.classList.add ( ' aberto ' )
+ ;
+    notify(`Compra rápida iniciada para ${name}.`);
+  });
+});
+
+favButtons.forEach ( ( button ) = > {
+  botão.addEventListener ( 'click' , ( event ) = > {
+    const card = event.target.closest ( ' . product-card' )
+ ;
+    const nome = cartão?. conjunto de dados . nome ;
+    se (!nome) retornar ;
+
+    const index = state. favorites . indexOf (name);
+    se (índice >= 0 ) {
+      estado. favoritos . emendar (índice, 1 );
+      notify(`${name} removido dos favoritos.`);
+    } outro {
+      estado. favoritos . push (nome);
+      notify(`${name} adicionado aos favoritos.`);
+    }
+
+    persistir ();
+    renderFavoritos ();
+  });
+});
+
+cartItemsList.addEventListener ( 'click' , ( event ) = > {
+  const target =
+ event.target ;
+  Se (!(target instanceof HTMLElement )) retorne ;
+ 
+
+  const index
+ = target.dataset.removeIndex ;​
+  se (índice === indefinido ) retorne ;
+
+  estado. carrinho . emendar ( Número (índice), 1 );
+  persistir ();
+  renderCarrinho ();
+});
+
+checkoutBtn.addEventListener ( 'click' , () = > {
+  se ( !
+ estado.carrinho.comprimento ) {
+    notify('Sua sacola está vazia.');
+    retornar ;
+  }
+
+  estado.carrinho = [];
+  persistir ();
+  renderCarrinho ();
+  notify('Pedido finalizado com sucesso!');
+});
+
+cartBtn.addEventListener ( 'click' , ( ) => cartDrawer.classList.toggle ( ' open ' ) );
+favoritesBtn.addEventListener ( ' click ' , () => favoritesDrawer.classList.toggle ( ' open ' ) );
+closeCartBtn.addEventListener ( ' click' , () => cartDrawer.classList.remove ( ' open ' ) );
+closeFavoritesBtn.addEventListener ( ' click' , () => favoritesDrawer.classList.remove ( ' open ' ) ) ;
+favoritesBtn.addEventListener('click', () => notify('Lista de favoritos em breve 💛'));
+
+função abrirAuth ( tipo ) {
+ 
+  authModal.classList.add ( ' open ' )
+ ;
+  authModal.setAttribute ( 'aria-hidden' , 'false' )
+ ;
+  authTitle.textContent = type === 'register' ? 'Criar conta' : 'Entrar';
+  authSubmit.textContent = type === 'register' ? 'Cadastrar' : 'Entrar';
+  authForm.dataset.mode = type ;
+​
+}
+
+loginBtn.addEventListener ( 'click' , () => openAuth ( ' login' ));
+ 
+registerBtn.addEventListener ( 'click' , () => openAuth ( 'register' ))
+ ; 
+closeAuthBtn.addEventListener ( 'click' , () = > {
+  authModal.classList.remove ( ' open ' )
+ ;
+  authModal.setAttribute ( 'aria-hidden' , 'true' )
+ ;
+});
+
+authForm.addEventListener ( 'submit' , ( event ) = > {
+  evento.prevenirPadrão ()
+ ;
+  const mode = authForm.dataset.mode === 'register' ? 'Cadastro' : 'Login';
+  notify(`${mode} realizado com sucesso!`);
+  authModal.classList.remove ( ' open ' )
+ ;
+  authModal.setAttribute ( 'aria-hidden' , 'true' )
+ ;
+  authForm.reset ( );
+});
+
+subscribeForm? .addEventListener ( 'submit' , ( event ) => {
+  evento.prevenirPadrão ()
+ ;
+  notify('Cadastro realizado! Em breve você receberá novidades AVYRA.');
+  subscribeForm.reset ( );
+});
+
+renderCarrinho ();
+renderFavoritos ();
+estilos.css
+estilos.css
++4
+-8
+
+@@ -37.70 +37.65 @@ h3 {
+  espaçamento entre letras : 0,03em ;
+}
+
+.marca {
+  cor : var (--dourado);
+  tamanho da fonte : 1,7rem ;
+}
+
+.menu {
+  exibição : flexível;
+  espaçamento : 8px ;
+  alinhar-itens : centro;
+}
+
+botão {
+  cursor : ponteiro;
+  borda : nenhuma;
+  raio-da-borda : 999px ;
+  transição : 0,2s ;
+}
+
+.ghost-btn ,
+.ícone-botão ,
+.botão-secundário ,
+.link-btn ,
+.bag-btn ,
+.fav-btn {
+.bag-btn {
+  cor : var (--branco);
+  fundo : transparente;
+  borda : 1px sólida rgba ( 245 , 246 , 248 , 0.35 );
+  preenchimento : 10px 14px ;
+ 
+}
+
+.fav-btn .ativo {
+  fundo : rgba ( 201 , 171 , 95 , 0.22 );
+  cor-da-borda : rgba ( 201 , 171 , 95 , 0.95 );
+}
+
+.icon-btn {
+  exibição : inline-flex;
+  alinhar-itens : centro;
+  espaço : 7px ;
+}
+
+.ícone-botão span {
+.icon-btn #cartBtn span {
+  fundo : era (--dourado);
+  cor : #03102b ;
+  peso da fonte : 800 ;
+  raio-da-borda : 999px ;
+  preenchimento : 1px 8px ;
+ 
+}
+
+principal {
+  largura : min ( 1100px , 92vw );
+  margem : 28px auto 60px ;
+}
+
+.herói {
+  margem : 80px 0 44px ;
+  
+}
+
+h1 {
+  tamanho-da-fonte : clamp ( 4.5rem , 12vw , 11rem );
+  altura da linha : 0,9 ;
+  margem : 0 ;
+  cor : var (--dourado);
+}
+
+.hero-text-only {
+  largura máxima : 980px ;
+@@ -140,51 +135,52 @@ h1 {
+
+.product-card {
+  exibição : grade;
+  grid-template-columns : 1 fr 320px ;
+  espaço : 20px ;
+  alinhar-itens : centro;
+  fundo : rgba ( 255 , 255 , 255 , 0.04 );
+  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.18 );
+  raio da borda : 28px ;
+  preenchimento : 22px ;
+  margem-inferior : 16px ;
+}
+
+.product-card h3 {
+ 
+  cor : var (--dourado);
+  margem : 0 ;
+  tamanho da fonte : 2rem ;
+}
+
+.preço {
+  tamanho da fonte : 1,75rem ;
+  peso da fonte : 800 ;
+}
+
+.product-image {
+  largura : 100% ;
+  largura : 300px ;
+  largura-máxima : 100% ;
+  proporção da tela : 1 / 1 ;
+  ajuste-do-objeto : cobertura;
+  raio da borda : 26px ;
+  borda : 1px sólida rgba ( 255 , 255 , 255 , 0.2 );
+}
+
+.newsletter {
+  preenchimento : 32px ;
+  fundo : rgba ( 10 , 20 , 45 , 0.8 );
+  raio da borda : 24px ;
+  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.25 );
+  margem superior : 30px ;
+}
+
+.subscribe-form {
+  exibição : flexível;
+  flex-wrap : envolver;
+  espaço : 12px ;
+  alinhar-itens : fim;
+}
+
+rótulo {
+  exibição : grade;
+  espaçamento : 8px ;
+  largura mínima : 280px ;
