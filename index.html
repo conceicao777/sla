@@ -1,151 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AVYRA Perfumes</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 <header class="topbar">
+
 <div class="brand">AVYRA</div>
 
-<nav class="menu" aria-label="Navegação principal">
-<button class="ghost-btn" id="loginBtn">Entrar</button>
-<button class="ghost-btn" id="registerBtn">Cadastrar</button>
+<nav class="menu">
 
-<button class="icon-btn" id="favoritesBtn" aria-label="Favoritos">
+<button id="favoritesBtn">
 ❤ <span id="favoritesCount">0</span>
 </button>
 
-<button class="icon-btn" id="cartBtn" aria-label="Sacola">
+<button id="cartBtn">
 👜 <span id="cartCount">0</span>
 </button>
+
 </nav>
+
 </header>
 
 <main>
 
-<section class="hero">
-<div class="hero-text hero-text-only">
-<h1>Em Breve</h1>
-<p class="hero-highlight">A AVYRA FARÁ UM EVENTO INESQUECÍVEL!</p>
-</div>
-</section>
+<h1>Perfumes em destaque</h1>
 
-<section class="showcase" id="produtos">
-<h2>Perfumes em destaque</h2>
+<section class="products">
 
-<article class="product-card" data-name="FOGO" data-price="59.99">
-<div>
-<h3>FOGO (Perfume Dourado)</h3>
-<p class="price">A partir de R$ 59,99</p>
-<p>Fragrância marcante com notas quentes e intensidade.</p>
+<!-- FOGO -->
 
-<div class="actions">
+<div class="product-card" data-name="FOGO" data-price="59.99">
+
+<img src="assets/perfumes/fogo.svg" class="product-image">
+
+<h3>FOGO</h3>
+
+<p>Perfume intenso e marcante</p>
+
 <button class="buy-btn">Comprar agora</button>
+
 <button class="bag-btn">Adicionar à sacola</button>
-<button class="fav-btn">❤ Favoritar</button>
+
 </div>
-</div>
 
-<img class="product-image" src="assets/perfumes/fogo.png" alt="Perfume FOGO da AVYRA">
-</article>
+<!-- AURA -->
 
-<article class="product-card" data-name="AURA" data-price="59.99">
-<div>
-<h3>AURA (Perfume Rosé)</h3>
-<p class="price">A partir de R$ 59,99</p>
-<p>Delicado, feminino e com presença suave.</p>
+<div class="product-card" data-name="AURA" data-price="59.99">
 
-<div class="actions">
+<img src="assets/perfumes/aura.svg" class="product-image">
+
+<h3>AURA</h3>
+
+<p>Perfume delicado e feminino</p>
+
 <button class="buy-btn">Comprar agora</button>
+
 <button class="bag-btn">Adicionar à sacola</button>
-<button class="fav-btn">❤ Favoritar</button>
+
 </div>
-</div>
 
-<img class="product-image" src="assets/perfumes/aura.png" alt="Perfume AURA da AVYRA">
-</article>
+<!-- MARÉ -->
 
-<article class="product-card" data-name="MARE" data-price="51.99">
-<div>
-<h3>MARÉ (Azul Tempestade)</h3>
-<p class="price">A partir de R$ 51,99</p>
-<p>Movimento, liberdade e frescor intenso.</p>
+<div class="product-card" data-name="MARÉ" data-price="51.99">
 
-<div class="actions">
+<img src="assets/perfumes/mare.svg" class="product-image">
+
+<h3>MARÉ</h3>
+
+<p>Perfume fresco e energético</p>
+
 <button class="buy-btn">Comprar agora</button>
+
 <button class="bag-btn">Adicionar à sacola</button>
-<button class="fav-btn">❤ Favoritar</button>
+
 </div>
-</div>
 
-<img class="product-image" src="assets/perfumes/mare.png" alt="Perfume MARÉ da AVYRA">
-</article>
+<!-- NOITE -->
 
-<article class="product-card" data-name="NOITE" data-price="79.99">
-<div>
-<h3>NOITE (Azul Noturno)</h3>
-<p class="price">A partir de R$ 79,99</p>
-<p>Elegância, profundidade e mistério.</p>
+<div class="product-card" data-name="NOITE" data-price="79.99">
 
-<div class="actions">
+<img src="assets/perfumes/noite.svg" class="product-image">
+
+<h3>NOITE</h3>
+
+<p>Perfume elegante e misterioso</p>
+
 <button class="buy-btn">Comprar agora</button>
-<button class="bag-btn">Adicionar à sacola</button>
-<button class="fav-btn">❤ Favoritar</button>
-</div>
-</div>
 
-<img class="product-image" src="assets/perfumes/noite.png" alt="Perfume NOITE da AVYRA">
-</article>
+<button class="bag-btn">Adicionar à sacola</button>
+
+</div>
 
 </section>
 
-<section class="newsletter" id="newsletter">
-<h2>Receba promoções e novidades</h2>
+<section class="newsletter">
+
+<h2>Receba promoções</h2>
 
 <form class="subscribe-form">
-<label>
-E-mail
-<input type="email" placeholder="seuemail@exemplo.com" required>
-</label>
 
-<button type="submit" class="primary-btn">Cadastrar</button>
+<input type="email" placeholder="Seu email">
+
+<button type="submit">Cadastrar</button>
+
 </form>
+
 </section>
 
 </main>
-
-<footer>
-<div>
-<h3>Fale conosco</h3>
-<p>Rua Alegre, 123, Belo Horizonte - MG, Brasil</p>
-<p>Telefone: (31) 3456-7890</p>
-</div>
-
-<div>
-<h3>Atendimento</h3>
-<button class="link-btn">Assessoria</button>
-<button class="link-btn">Ajuda</button>
-<button class="link-btn">Trocas e devoluções</button>
-</div>
-
-<div>
-<h3>Redes sociais</h3>
-<button class="link-btn">Instagram</button>
-<button class="link-btn">TikTok</button>
-<button class="link-btn">WhatsApp</button>
-</div>
-</footer>
 
 <script src="script.js"></script>
 
