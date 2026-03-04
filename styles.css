@@ -1,230 +1,131 @@
-:root {
-  --navy: #061b43;
-  --gold: #c9ab5f;
-  --white: #f5f6f8;
-  --muted: #c7cfdb;
+@@ -37.70 +37.65 @@ h3 {
+  espaçamento entre letras : 0,03em ;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at 10% 20%, #112b66 0%, var(--navy) 40%);
-  color: var(--white);
-}
-
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(6, 27, 67, 0.95);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 6vw;
-  border-bottom: 1px solid rgba(201, 171, 95, 0.25);
-}
-
-.brand,
-h1,
-h2,
-h3 {
-  font-family: 'Anton', sans-serif;
-  letter-spacing: 0.03em;
-}
-
-.brand {
-  color: var(--gold);
-  font-size: 1.7rem;
+.marca {
+  cor : var (--dourado);
+  tamanho da fonte : 1,7rem ;
 }
 
 .menu {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  exibição : flexível;
+  espaçamento : 8px ;
+  alinhar-itens : centro;
 }
 
-button {
-  cursor: pointer;
-  border: none;
-  border-radius: 999px;
-  transition: 0.25s;
+botão {
+  cursor : ponteiro;
+  borda : nenhuma;
+  raio-da-borda : 999px ;
+  transição : 0,2s ;
 }
 
-.ghost-btn,
-.icon-btn,
-.secondary-btn,
-.link-btn,
+.ghost-btn ,
+.ícone-botão ,
+.botão-secundário ,
+.link-btn ,
+.bag-btn ,
+.fav-btn {
 .bag-btn {
-  color: var(--white);
-  background: transparent;
-  border: 1px solid rgba(245, 246, 248, 0.35);
-  padding: 10px 14px;
+  cor : var (--branco);
+  fundo : transparente;
+  borda : 1px sólida rgba ( 245 , 246 , 248 , 0.35 );
+  preenchimento : 10px 14px ;
+ 
+}
+
+.fav-btn .ativo {
+  fundo : rgba ( 201 , 171 , 95 , 0.22 );
+  cor-da-borda : rgba ( 201 , 171 , 95 , 0.95 );
 }
 
 .icon-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
+  exibição : inline-flex;
+  alinhar-itens : centro;
+  espaço : 7px ;
 }
 
-.icon-btn span {
-  background: var(--gold);
-  color: #03102b;
-  font-weight: 800;
-  border-radius: 999px;
-  padding: 1px 8px;
+.ícone-botão span {
+.icon-btn #cartBtn span {
+  fundo : era (--dourado);
+  cor : #03102b ;
+  peso da fonte : 800 ;
+  raio-da-borda : 999px ;
+  preenchimento : 1px 8px ;
+ 
 }
 
-main {
-  width: min(1100px, 92vw);
-  margin: 28px auto 60px;
+principal {
+  largura : min ( 1100px , 92vw );
+  margem : 28px auto 60px ;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 26px;
-  align-items: center;
-  margin-bottom: 44px;
-}
-
-.eyebrow {
-  color: var(--gold);
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 800;
+.herói {
+  margem : 80px 0 44px ;
+  
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 7rem);
-  line-height: 0.9;
-  margin: 0;
-  color: var(--gold);
+  tamanho-da-fonte : clamp ( 4.5rem , 12vw , 11rem );
+  altura da linha : 0,9 ;
+  margem : 0 ;
+  cor : var (--dourado);
 }
 
-.launch-date {
-  font-size: 1.1rem;
-}
-
-.hero-actions,
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.primary-btn,
-.buy-btn {
-  background: var(--gold);
-  color: #1b2140;
-  font-weight: 800;
-  padding: 12px 18px;
-}
-
-.hero-product {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 40px;
-  border: 2px solid rgba(201, 171, 95, 0.3);
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
-}
-
-.showcase h2,
-.newsletter h2 {
-  color: var(--gold);
-  font-size: 2.5rem;
-  margin: 0 0 20px;
-}
+.hero-text-only {
+  largura máxima : 980px ;
+@@ -140,51 +135,52 @@ h1 {
 
 .product-card {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 20px;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(201, 171, 95, 0.18);
-  border-radius: 28px;
-  padding: 22px;
-  margin-bottom: 16px;
+  exibição : grade;
+  grid-template-columns : 1 fr 320px ;
+  espaço : 20px ;
+  alinhar-itens : centro;
+  fundo : rgba ( 255 , 255 , 255 , 0.04 );
+  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.18 );
+  raio da borda : 28px ;
+  preenchimento : 22px ;
+  margem-inferior : 16px ;
 }
 
 .product-card h3 {
-  color: var(--gold);
-  margin: 0;
-  font-size: 2rem;
+ 
+  cor : var (--dourado);
+  margem : 0 ;
+  tamanho da fonte : 2rem ;
 }
 
-.price {
-  font-size: 1.75rem;
-  font-weight: 800;
+.preço {
+  tamanho da fonte : 1,75rem ;
+  peso da fonte : 800 ;
 }
 
 .product-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  largura : 100% ;
+  largura : 300px ;
+  largura-máxima : 100% ;
+  proporção da tela : 1 / 1 ;
+  ajuste-do-objeto : cobertura;
+  raio da borda : 26px ;
+  borda : 1px sólida rgba ( 255 , 255 , 255 , 0.2 );
 }
 
 .newsletter {
-  padding: 32px;
-  background: rgba(10, 20, 45, 0.8);
-  border-radius: 24px;
-  border: 1px solid rgba(201, 171, 95, 0.25);
-  margin-top: 30px;
+  preenchimento : 32px ;
+  fundo : rgba ( 10 , 20 , 45 , 0.8 );
+  raio da borda : 24px ;
+  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.25 );
+  margem superior : 30px ;
 }
 
 .subscribe-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: end;
+  exibição : flexível;
+  flex-wrap : envolver;
+  espaço : 12px ;
+  alinhar-itens : fim;
 }
 
-label {
-  display: grid;
-  gap: 8px;
-  min-width: 280px;
-}
-
-input {
-  border-radius: 10px;
-  border: 1px solid rgba(245, 246, 248, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  padding: 11px;
-}
-
-footer {
-  width: min(1100px, 92vw);
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  border-top: 1px solid rgba(201, 171, 95, 0.2);
-  padding-top: 30px;
-}
-
-button:hover {
-  transform: translateY(-1px);
-  opacity: 0.95;
-}
-
-@media (max-width: 860px) {
-  .hero,
-  .product-card,
-  footer {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-product {
-    max-width: 420px;
-  }
-}
+rótulo {
+  exibição : grade;
+  espaçamento : 8px ;
+  largura mínima : 280px ;
